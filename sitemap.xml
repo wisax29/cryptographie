@@ -2,51 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Page d'accueil -->
   <url>
-    <loc>https://cryptographie-k5wx.onrender.com/</loc>
+    <loc>https://cryptographie.tech/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <!-- Outils de chiffrement -->
   <url>
-    <loc>https://cryptographie-k5wx.onrender.com/vigenere</loc>
+    <loc>https://cryptographie.tech/vigenere</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cryptographie-k5wx.onrender.com/vernam</loc>
+    <loc>https://cryptographie.tech/vernam</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cryptographie-k5wx.onrender.com/trithemius</loc>
+    <loc>https://cryptographie.tech/trithemius</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cryptographie-k5wx.onrender.com/caesar</loc>
+    <loc>https://cryptographie.tech/caesar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cryptographie-k5wx.onrender.com/rot13</loc>
+    <loc>https://cryptographie.tech/rot13</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://cryptographie-k5wx.onrender.com/hexadecimal</loc>
+    <loc>https://cryptographie.tech/hexadecimal</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <!-- Fonctionnalités annexes -->
   <url>
-    <loc>https://cryptographie-k5wx.onrender.com/history</loc>
+    <loc>https://cryptographie.tech/history</loc>
     <changefreq>daily</changefreq>
     <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://cryptographie-k5wx.onrender.com/jeux</loc>
+    <loc>https://cryptographie.tech/jeux</loc>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
