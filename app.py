@@ -59,27 +59,19 @@ def google_verification():
 @app.route('/sitemap.xml')
 def serve_sitemap():
     try:
-        # On ouvre et on lit le fichier proprement en UTF-8
         with open('sitemap.xml', 'r', encoding='utf-8') as f:
             content = f.read()
-        # On renvoie le contenu avec le bon format XML
         return Response(content, mimetype='application/xml')
     except Exception as e:
-        # Si ça plante, on affiche l'erreur exacte sur la page web
         return f"Erreur Flask (Sitemap) : {str(e)}", 500
 
-@app.route('/robots.txt')
-def serve_robots():
-    # Définition du contenu du fichier robots.txt
-    robots_content = (
-        "User-agent: *\n"           # S'applique à TOUS les robots (Google, Bing, etc.)
-        "Allow: /\n"                # Autorise l'accès à tout le site
-        "Disallow: /history\n\n"    # Optionnel : bloque l'indexation de l'historique (données changeantes)
-        "Sitemap: https://cryptographie-k5wx.onrender.com/sitemap.xml\n" # <-- REMPLACE par la vraie URL de ton site
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(
+        os.path.join(app.root_path, 'static'),
+        'favicon.png',
+        mimetype='image/png'
     )
-    
-    # On renvoie le texte brut avec le bon format text/plain
-    return Response(robots_content, mimetype='text/plain')
     
 @app.route('/vernam', methods=['GET', 'POST'])
 def vernam():
